@@ -4,3 +4,8 @@ Make sure you have following files in your directory, in order to run the variou
 2. vrepConst.py
 3. the appropriate remote API library: "remoteApi.dll" (Windows), "remoteApi.dylib" (Mac) or "remoteApi.so" (Linux)
 4. simpleTest.py (or any other example file)
+5. see videos here:
+	- https://youtu.be/8qw4GE_yjWQ
+	- https://youtu.be/nAUBwK1vufM
+	- https://youtu.be/U8Ct89bDGDI
+6. read the full description in the pdf 'Final_Robotics_Project.pdf'.
