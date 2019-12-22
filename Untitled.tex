@@ -1,0 +1,50 @@
+\documentclass[11pt, oneside]{article}   	% use "amsart" instead of "article" for AMSLaTeX format
+\usepackage{geometry}                		% See geometry.pdf to learn the layout options. There are lots.
+\geometry{letterpaper}                   		% ... or a4paper or a5paper or ... 
+%\geometry{landscape}                		% Activate for rotated page geometry
+%\usepackage[parfill]{parskip}    		% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}				% Use pdf, png, jpg, or eps§ with pdflatex; use eps in DVI mode
+								% TeX will automatically convert eps --> pdf in pdflatex		
+\usepackage{amssymb}
+
+%SetFonts
+
+%SetFonts
+
+
+\begin{document}
+
+eq. 11 introduces a probability distribution over all possible spike trains of an ouput neuron $Y_i$ given an input spike train $\mathbf X$:
+
+$$
+P_{\mathbf w_{i}}(Y_i|\mathbf X) \approx \Bigg [\prod_{t' \in Y_i} \phi(v_i^*(t')) \Bigg ] \exp \Bigg(-\int_0^T \phi \Big(v_i^*(t)\Big) dt \Bigg)
+$$
+
+where
+
+$$
+\Bigg [\prod_{t' \in Y_i} \phi(v_i^*(t')) \Bigg ]
+$$
+is the probability of having a spike at $t' \in Y_i$ and  
+
+$$
+\exp \Bigg(-\int_0^T \phi \Big(v_i^*(t)\Big) dt \Bigg)
+$$
+
+
+is the probability of having no spikes elsewhere in the spike trains. The function $\phi(v_i^*(t'))$ (if I understand correctly) maps some activity $v_i^*(t')$ to the range [0, 1], i.e. it is a sigmoid. 
+
+
+
+I don't see how the probability of having no spikes elsewhere in the spike train is 
+
+$$\exp \Bigg(-\int_0^T \phi \Big(v_i^*(t)\Big) dt \Bigg)$$ 
+
+and not 
+
+$$\prod_{t \in Y_i} \big(1 - \phi(v_i^*(t))\big)$$
+
+Thanks!
+
+
+\end{document}  
