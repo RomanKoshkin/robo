@@ -1,4 +1,4 @@
-# asdfasd
+# C/RNN-controlled visually guided robot in VREP
 
 Make sure you have following files in your directory, in order to run the various examples:
 
